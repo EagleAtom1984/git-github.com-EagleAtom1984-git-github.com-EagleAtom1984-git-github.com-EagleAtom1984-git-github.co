@@ -8,7 +8,8 @@ int main() {
     int guess;
 
     while(secretNum != guess){
-        
+    std::cout << "Enter guess: ";
+    std::cin >> guess;
     }
 
     std::srand(std::time(0));//use the current time as seed for random generator
