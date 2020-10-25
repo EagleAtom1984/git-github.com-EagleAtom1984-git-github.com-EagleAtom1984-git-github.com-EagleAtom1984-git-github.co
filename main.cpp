@@ -3,7 +3,13 @@
 #include <cstdlib>
 
 int main() {
-    
+
+    int secretNum = 4;
+    int guess;
+
+    while(secretNum != guess){
+        
+    }
 
     std::srand(std::time(0));//use the current time as seed for random generator
     int random_variable = std::rand();
