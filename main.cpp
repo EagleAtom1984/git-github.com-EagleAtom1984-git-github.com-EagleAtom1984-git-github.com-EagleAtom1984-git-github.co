@@ -12,7 +12,7 @@ int main() {
 
     while(secretNum != guess && !outOfGuesses) {
         if(guessCount < guessLimit) {
-            std::cout << "Enter guess: ";
+            std::cout << "Guess a number between 1 and 10: "; //player to select a number, maximum guesses:3
             std::cin >> guess;
             guessCount++;
         } else {
@@ -24,10 +24,8 @@ int main() {
     } else {
         std::cout << "Well done!";
     }
-    std::srand(std::time(0));//use the current time as seed for random generator
-    int random_variable = std::rand();
-    std::cout << "Random value on [0 " << RAND_MAX << "]: "
-              << random_variable << '\n';
 
     return 0;
+
+    
 }
